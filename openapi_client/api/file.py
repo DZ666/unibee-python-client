@@ -20,7 +20,6 @@ from pydantic import Field
 from typing import Optional
 from typing_extensions import Annotated
 from openapi_client.models.merchant_oss_file_post200_response import MerchantOssFilePost200Response
-from openapi_client.models.bytearray import bytearray
 
 from openapi_client.api_client import ApiClient, RequestSerialized
 from openapi_client.api_response import ApiResponse
@@ -43,7 +42,7 @@ class File:
     @validate_call
     def oss_file_post(
         self,
-        file: Annotated[Optional[bytearray], Field(description="File To Upload")] = None,
+        file: Annotated[Optional[bytes], Field(description="File To Upload")] = None,
         _request_timeout: Union[
             None,
             Annotated[StrictFloat, Field(gt=0)],
@@ -61,7 +60,7 @@ class File:
 
 
         :param file: File To Upload
-        :type file: bytearray
+        :type file: bytes
         :param _request_timeout: timeout setting for this request. If one
                                  number provided, it will be total request
                                  timeout. It can also be a pair (tuple) of
@@ -109,7 +108,7 @@ class File:
     @validate_call
     def oss_file_post_with_http_info(
         self,
-        file: Annotated[Optional[bytearray], Field(description="File To Upload")] = None,
+        file: Annotated[Optional[bytes], Field(description="File To Upload")] = None,
         _request_timeout: Union[
             None,
             Annotated[StrictFloat, Field(gt=0)],
@@ -127,7 +126,7 @@ class File:
 
 
         :param file: File To Upload
-        :type file: bytearray
+        :type file: bytes
         :param _request_timeout: timeout setting for this request. If one
                                  number provided, it will be total request
                                  timeout. It can also be a pair (tuple) of
@@ -175,7 +174,7 @@ class File:
     @validate_call
     def oss_file_post_without_preload_content(
         self,
-        file: Annotated[Optional[bytearray], Field(description="File To Upload")] = None,
+        file: Annotated[Optional[bytes], Field(description="File To Upload")] = None,
         _request_timeout: Union[
             None,
             Annotated[StrictFloat, Field(gt=0)],
@@ -193,7 +192,7 @@ class File:
 
 
         :param file: File To Upload
-        :type file: bytearray
+        :type file: bytes
         :param _request_timeout: timeout setting for this request. If one
                                  number provided, it will be total request
                                  timeout. It can also be a pair (tuple) of
