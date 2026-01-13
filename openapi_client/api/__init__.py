@@ -3,6 +3,9 @@
 # import apis into api package
 from openapi_client.api.auth import Auth
 from openapi_client.api.balance import Balance
+from openapi_client.api.checkout import Checkout
+from openapi_client.api.credit import Credit
+from openapi_client.api.discount import Discount
 from openapi_client.api.email import Email
 from openapi_client.api.email_template import EmailTemplate
 from openapi_client.api.file import File
@@ -12,6 +15,7 @@ from openapi_client.api.member import Member
 from openapi_client.api.metric import Metric
 from openapi_client.api.payment import Payment
 from openapi_client.api.plan import Plan
+from openapi_client.api.product import Product
 from openapi_client.api.profile import Profile
 from openapi_client.api.role import Role
 from openapi_client.api.search import Search
